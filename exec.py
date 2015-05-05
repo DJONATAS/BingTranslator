@@ -33,7 +33,8 @@ def criarDiretorio():
 
 
 def processarArquivo(nomeArquivo):
-    fileTraduzido = open('D:\\Projetos\\tradutorLegenda\\PT-BR\\'+nomeArquivo, 'w')
+
+    fileTraduzido = open(os.path.abspath(__file__)+'\\PT\\'+nomeArquivo, 'w')
     with open(nomeArquivo) as openfileobject:
         for line in openfileobject:
             if "0" != line[0] \
@@ -49,6 +50,8 @@ def processarArquivo(nomeArquivo):
 
 criarDiretorio()
 arquivos = glob.glob("*.srt")
+
+print(os.path.dirname(os.path.abspath(__file__)))
 
 for x in arquivos:
     processarArquivo(x)
