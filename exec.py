@@ -2,11 +2,8 @@ from microsofttranslator import Translator, TranslateApiException
 import os
 import glob
 
-# client_id = "translaterpythonapi"
-# client_secret = "FLghnwW4LJmNgEG+EZkL8uE+wb7+6tkOS8eejHg3AaI="
-
-client_id = "TradutorLegenda"
-client_secret = "qD+OxAHGlM7nPAigwXEtFho9zzp4/7QehCN6kD4fSNI="
+client_id = "<CLIENT_ID>"
+client_secret = "<SECRET_KEY>"
 client = Translator(client_id, client_secret, debug=True)
 
 print()
