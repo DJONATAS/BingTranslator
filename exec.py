@@ -28,8 +28,8 @@ def traduzir(string):
 
 
 def criarDiretorio():
-    if not os.path.exists('PT-BR'):
-        os.makedirs('PT-BR')
+    if not os.path.exists('PT'):
+        os.makedirs('PT')
 
 
 def processarArquivo(nomeArquivo):
